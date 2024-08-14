@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "FairfieldDisplay";
+  src: url(./fonts/PlayfairDisplay.ttf) format("truetype");
+}
+
+.App {
+  max-width: none;
+  border: 0px;
+  margin: 0px;
+}
