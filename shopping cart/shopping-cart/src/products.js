@@ -2,35 +2,38 @@ import egg from "./assets/egg.png";
 import milk from "./assets/milk.png";
 import cheese from "./assets/cheese.jpg";
 
-export const PRODUCTS = [
+const products = [
   {
     id: 1,
-    productName: "Eggs",
-    productImage: egg,
+    name: "Eggs",
+    img: egg,
   },
   {
     id: 2,
-    productName: "Milk",
-    productImage: milk,
+    name: "Milk",
+    img: milk,
+    types: ["Condensed Milk", "Fluid Milk", "Raw Milk"],
   },
   {
     id: 3,
-    productName: "Cheese",
-    productImage: cheese,
+    name: "Cheese",
+    img: cheese,
   },
   {
     id: 4,
-    productName: "Beef",
-    // productImage: beef,
+    name: "Beef",
+    // img: beef,
   },
   {
     id: 5,
-    productName: "Yogurt",
-    // productImage: beef,
+    name: "Yogurt",
+    // img: beef,
   },
   {
     id: 6,
-    productName: "Soy",
-    // productImage: beef,
+    name: "Soy",
+    // img: beef,
   },
 ];
+
+export default products;

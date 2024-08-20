@@ -1,12 +1,9 @@
 import React from "react";
-import { PRODUCTS } from "../../products";
-import { Product } from "./product";
-import { Popup } from "./popup";
+import products from "../../products";
+import ProductGrid from "./productGrid";
 import "./shop.css";
-import { useState } from "react";
 
 export const Shop = () => {
-  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="shop">
       <div className="shopTitle">
@@ -25,7 +22,7 @@ export const Shop = () => {
       </div>
       <div className="shopPage">
         <div className="leftpanel">
-          <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+          {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
             <h1> Select Criteria </h1>
             <div>
               <input type="checkbox" />
@@ -39,16 +36,18 @@ export const Shop = () => {
               <input type="checkbox" />
               Criteria 3
             </div>
-          </Popup>
+          </Popup> */}
         </div>
-        <div onClick={() => setButtonPopup(true)} className="products">
-          {PRODUCTS.map((product) => (
-            <Product data={product} />
-          ))}
-        </div>
-        <div className="groceryList">
-          <h1> Grocery List </h1>
-        </div>
+        {/* <div className="products"> */}
+        <ProductGrid products={products} />
+        {/* {PRODUCTS.map((product) => (
+            <Product
+              trigger={buttonPopup}
+              setTrigger={setButtonPopup}
+              data={product}
+            />
+          ))} */}
+        {/* </div> */}
       </div>
     </div>
   );

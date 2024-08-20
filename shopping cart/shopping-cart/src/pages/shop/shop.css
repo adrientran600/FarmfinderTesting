@@ -4,8 +4,9 @@
 }
 
 .shopTitle {
+  /* color: #426b1f; */
   margin-top: 70px;
-  margin-left: 21%;
+  margin-left: 26%;
   font-size: 20px;
   font-family: "FairfieldDisplay";
 }
@@ -13,7 +14,7 @@
 .products {
   float: left;
   margin: auto;
-  width: 60%;
+  width: 50%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -29,8 +30,8 @@
   border-radius: 15px;
   box-shadow: 0 0 10px lightgray;
   /* background-color: gray; */
-  width: 300px;
-  height: 350px;
+  width: 250px;
+  height: 300px;
   margin-bottom: 20px;
   margin-top: 10px;
   padding: 0;
@@ -41,7 +42,7 @@
 }
 
 .product img {
-  height: 200px;
+  height: 160px;
 }
 
 .product .productName {
@@ -82,23 +83,13 @@
   margin-left: 15px;
   font-family: "FairfieldDisplay";
   text-align: center;
-  width: 19%;
+  width: 24%;
   height: 100px;
-}
-
-.groceryList {
-  float: left;
-  /* background-color: grey; */
-  width: 19%;
-  height: 100px;
-  font-size: 10px;
-  font-family: "FairfieldDisplay";
-  text-align: center;
 }
 
 .filterBox {
   margin: auto;
-  width: 59%;
+  width: 50%;
   height: 20px;
   margin-bottom: 40px;
   display: flex;

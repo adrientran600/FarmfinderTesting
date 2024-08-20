@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "mocha": "^10.7.3",
     "phosphor-react": "^1.4.1",
     "react-router-dom": "^6.26.0",
     "webfontloader": "^1.6.28"
